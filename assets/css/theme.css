@@ -21873,12 +21873,14 @@ iframe.yt-video.loaded {
   display: none !important;
 }
 .icon-box .car-insurance-icon {
-  width: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 8px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 .icon-box:hover {
-  background-color: #186BE8;
+  background-color: #ffffff;
+  color: #000;
+  transition: .6s ease;
 }
 .icon-box:hover .car-insurance-icon {
   display: none !important;
