@@ -61,10 +61,17 @@
 /* preloader end*/
 
 .price-list {
+  line-height: 25px;
   text-align: left;
   font-size: 1.3em;
   font-weight: bold;
   font-family: 'Balsamiq Sans', cursive;
+}
+
+@media (min-width: 768px) {
+  .price-list {
+    line-height: 30px;
+  }
 }
 
 .nowrap-segment {
