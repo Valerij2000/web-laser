@@ -1,3 +1,7 @@
+/* fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
 #instagram-ico {
     font-size: 25px;
 }
@@ -55,3 +59,25 @@
   }
 
 /* preloader end*/
+
+.price-list {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.nowrap-segment {
+  color: #dbe4e7;
+  white-space: nowrap;
+}
+
+@media (max-width: 456px) {
+  .price-list {
+    text-align: left;
+    font-size: 1em;
+  }
+  .card-body {
+    padding: 1.5rem 1.5rem;
+  }
+}

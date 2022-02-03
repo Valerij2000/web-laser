@@ -7148,6 +7148,36 @@ textarea.form-control-lg {
   }
 }
 
+.carousel-control-prev {
+  right: 130px;
+  width: 50%;
+}
+
+.carousel-control-next {
+  left: 130px;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .carousel-control-prev {
+    right: 160px;
+  }
+  
+  .carousel-control-next {
+    left: 160px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .carousel-control-prev {
+    right: 200px;
+  }
+  
+  .carousel-control-next {
+    left: 200px;
+  }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -7163,7 +7193,6 @@ textarea.form-control-lg {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 5%;
   padding: 0;
   color: #5EDCD4;
   text-align: center;
@@ -7189,14 +7218,6 @@ textarea.form-control-lg {
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
-}
-
-.carousel-control-prev {
-  left: 0;
-}
-
-.carousel-control-next {
-  right: 0;
 }
 
 .carousel-control-prev-icon,
