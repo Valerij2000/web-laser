@@ -6,6 +6,15 @@ window.onload = function () {
       document.body.classList.remove('loaded_hiding');
     }, 500);
 }
+// add phone mask form
+var phoneMask = IMask(
+  document.getElementById('floatingPhone'), {
+  mask: '+{38}(000)000-00-00'
+});
+// input only numbers (not string data)
+$('body').on('input', '#floatingName', function(){
+  this.value = this.value.replace(/[^a-zа-яё\s]/gi, '');
+});
 // navbar active links
 const arrNavLinks = document.querySelectorAll('.nav-link')
 // default
