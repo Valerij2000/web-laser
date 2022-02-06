@@ -100,24 +100,24 @@
             <div class="card card-bg shadow hero-header-form">
               <div class="card-body p-4 p-xl-6">
                 <h2 class="text-100 text-center">Записаться на приём</h2>
-                <form class="mb-3">
+                <form class="mb-3" action="telegram.php" method="POST">
                   <div class="form-floating mb-3">
                     <input class="form-control input-box form-ensurance-header-control" id="floatingName" type="text"
-                      placeholder="name" />
+                      placeholder="name" name="name" required oninvalid="this.setCustomValidity('Поле имени является обязательным')" oninput="setCustomValidity('')"/>
                     <label for="floatingName">Ваше имя</label>
                   </div>
                   <div class="form-floating mb-3">
                     <input class="form-control input-box form-ensurance-header-control" id="floatingPhone" type="tel"
-                      placeholder="name@example.com" />
+                      placeholder="Телефон" name="phone" required />
                     <label for="floatingPhone">Телефон</label>
                   </div>
                   <div class="form-floating mb-3">
                     <textarea class="form-control input-box form-ensurance-header-control" id="floatingTextarea"
-                      placeholder="Leave a comment here"></textarea>
+                      placeholder="Комментарий" name="message" required oninvalid="this.setCustomValidity('Поле комментария является обязательным')" oninput="setCustomValidity('')"></textarea>
                     <label for="floatingTextarea">Комментарий</label>
                   </div>
                   <div class="col-12 d-grid">
-                    <button class="btn btn-primary rounded-pill" id="btn-send-request" type="button">Отправить</button>
+                    <button class="btn btn-primary rounded-pill" id="btn-send-request" type="submit">Отправить</button>
                   </div>
                 </form>
               </div>
@@ -576,11 +576,11 @@
                 
           </div>
           <div class="col-12 col-lg-6 col-xl-5">
-            <h3 class="text-200 my-4">Задайте ваш вопрос и менеджер свяжеться с вами</h3>
-            <form class="position-relative">
+            <h3 class="text-200 my-4">Задайте вопрос, указав контакты</h3>
+            <form class="position-relative" action="telegram.php" method="POST">
               <div class="input-group-icon">
-                <input class="form-control form-ensurance-control" type="email" placeholder="Ваш вопрос"
-                  aria-label="email" />
+                <input class="form-control form-ensurance-control" type="text" placeholder="Ваш вопрос"
+                  aria-label="question" name="question" required oninvalid="this.setCustomValidity('Поле вопроса является обязательным')" oninput="setCustomValidity('')"/>
               </div>
               <button class="btn btn-primary btn-subscribe" type="submit">Отправить</button>
             </form>
